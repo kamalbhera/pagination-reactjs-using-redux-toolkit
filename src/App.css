@@ -1,0 +1,85 @@
+.table-pagination-container {
+  padding-top: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+}
+
+table {
+  text-align: left;
+  font-size: 14px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  text-transform: capitalize;
+  margin: 15px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table > thead > tr {
+  background-color: #00ABFF;
+  color:white;
+}
+
+table > thead > tr >th {
+text-align: center;
+}
+
+table > tbody > tr {
+  transition: all 0.3s ease-in-out;
+}
+
+table > tbody > tr:hover {
+  transform: scale(1.01);
+}
+
+table > tbody > tr:nth-child(even) {
+background-color: #F0F3F5;
+}
+
+.table-pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.pagination_button button {
+  background-color: #fff;
+  color:rgb(0, 153, 255);
+  border:1px solid #ddd;
+  padding: 10px 20px;
+ cursor:pointer;
+}
+
+
+.table-pagination button:hover {
+  background-color: #efefef;
+}
+
+.table-pagination-container p {
+  font-size: 14px;
+}
+
+.pagination_button button:focus,
+.pagination_button button:hover {
+background-color: rgb(0, 153, 255);
+color:white;
+}
+
+.selected.true {
+  background-color: rgb(0, 153, 255);
+color:white;
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events:none;
+  background-color: rgb(229, 229, 229) !important;
+}
